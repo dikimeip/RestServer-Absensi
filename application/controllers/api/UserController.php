@@ -46,14 +46,14 @@ class UserController extends REST_Controller {
 	public function index_post()
 	{
 		$data = [
-			'Nik' => $this->post('nik'),
-			'NamaUser' => $this->post('nama'),
-			'PasswordUser' => $this->post('password'),
-			'FotoUser' => $this->post('foto'),
-			'Subag' => $this->post('subag'),
-			'NoTelp' => $this->post('nomer'),
-			'EmailUser' => $this->post('email'),
-			'AlamatUser' => $this->post('alamat')
+			'Nik' => $this->post('Nik'),
+			'NamaUser' => $this->post('NamaUser'),
+			'PasswordUser' => $this->post('PasswordUser'),
+			'FotoUser' => $this->post('FotoUser'),
+			'Subag' => $this->post('Subag'),
+			'NoTelp' => $this->post('NoTelp'),
+			'EmailUser' => $this->post('EmailUser'),
+			'AlamatUser' => $this->post('PasswordUser')
 		];
 		$query = $this->Model->post_user($data);
 		if ($query) {
@@ -73,14 +73,14 @@ class UserController extends REST_Controller {
 	{
 		$id = $this->put('id');
 		$data = [
-			'Nik' => $this->put('nik'),
-			'NamaUser' => $this->put('nama'),
-			'PasswordUser' => $this->put('password'),
-			'FotoUser' => $this->put('foto'),
-			'Subag' => $this->put('subag'),
-			'NoTelp' => $this->put('nomer'),
-			'EmailUser' => $this->put('email'),
-			'AlamatUser' => $this->put('alamat')
+			'Nik' => $this->put('Nik'),
+			'NamaUser' => $this->put('NamaUser'),
+			'PasswordUser' => $this->put('PasswordUser'),
+			'FotoUser' => $this->put('FotoUser'),
+			'Subag' => $this->put('Subag'),
+			'NoTelp' => $this->put('NoTelp'),
+			'EmailUser' => $this->put('EmailUser'),
+			'AlamatUser' => $this->put('AlamatUser')
 		];
 		$query = $this->Model->put_user($id,$data);
 		if ($query) {
